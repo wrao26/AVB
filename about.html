@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — AVB Imobiliária</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors:{black:'#0A0A0A',white:'#F7F4EE',beige:'#E7DFCC',graphite:'#3A3A38',gold:'#C6A15B'}, fontFamily:{display:['Fraunces','serif'],body:['Inter','sans-serif']} } } }
+</script>
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-black text-white font-body">
+
+<div id="scroll-progress"></div>
+
+<header id="site-nav">
+  <div class="container-avb flex items-center justify-between">
+    <a href="index.html" class="font-display text-lg tracking-wide-avb">AVB <span class="text-gold-soft italic font-normal">Imobiliária</span></a>
+    <nav class="hidden lg:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="properties.html" class="nav-link">Properties</a>
+      <a href="investments.html" class="nav-link">Investments</a>
+      <a href="about.html" class="nav-link is-active">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="hidden lg:block"><a href="contact.html" class="btn-line magnetic">Schedule Consultation</a></div>
+    <button id="menu-btn" class="menu-btn lg:hidden" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="properties.html">Properties</a>
+  <a href="investments.html">Investments</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="pt-40 pb-20 md:pt-52 md:pb-28">
+  <div class="container-avb reveal">
+    <span class="eyebrow">About AVB</span>
+    <h1 class="display-xl text-5xl md:text-7xl mt-6 max-w-3xl">Discretion is our <span class="display-italic text-gold-soft">signature</span>.</h1>
+  </div>
+</section>
+
+<section class="section-pad pt-0">
+  <div class="container-avb grid grid-cols-1 lg:grid-cols-12 gap-14">
+    <div class="lg:col-span-6 reveal">
+      <div class="ph aspect-[4/5]" data-label="AVB — Office, Luanda"><div class="ph-mark">AVB</div></div>
+    </div>
+    <div class="lg:col-span-6 reveal flex flex-col justify-center">
+      <p class="body-lg mb-6">AVB Imobiliária was founded on a simple premise: the best properties are rarely the loudest ones. Our clients — owners, buyers and investors across Luanda, Dubai and Lisbon — come to us for judgment as much as access.</p>
+      <p class="body-lg mb-6">We operate as a single team across three time zones, which means a property in Dubai is evaluated with the same rigour as one in Luanda or Lisbon. No market is treated as secondary.</p>
+      <p class="body-lg">Every transaction is handled personally, from first enquiry to final signature — and often, well beyond it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad bg-graphite/20">
+  <div class="container-avb grid grid-cols-2 md:grid-cols-4 gap-10" data-stagger>
+    <div class="reveal"><div class="counter text-4xl text-gold-soft" data-counter="12">0</div><p class="text-xs text-white/45 mt-2">Years of experience</p></div>
+    <div class="reveal"><div class="counter text-4xl text-gold-soft" data-counter="120" data-suffix="+">0</div><p class="text-xs text-white/45 mt-2">Closed transactions</p></div>
+    <div class="reveal"><div class="counter text-4xl text-gold-soft" data-counter="3">0</div><p class="text-xs text-white/45 mt-2">Countries represented</p></div>
+    <div class="reveal"><div class="counter text-4xl text-gold-soft" data-counter="98" data-suffix="%">0</div><p class="text-xs text-white/45 mt-2">Client retention</p></div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container-avb">
+    <span class="eyebrow reveal">Our Values</span>
+    <h2 class="display-lg text-4xl md:text-5xl mt-6 mb-16 max-w-xl reveal">What we won't compromise on.</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10" data-stagger>
+      <div class="feature-card bg-black reveal"><h3 class="display-md text-xl mb-3">Discretion</h3><p class="text-sm text-white/55 leading-relaxed">What happens in a negotiation stays with the two parties involved.</p></div>
+      <div class="feature-card bg-black reveal"><h3 class="display-md text-xl mb-3">Precision</h3><p class="text-sm text-white/55 leading-relaxed">Every figure, document and deadline is verified before it reaches you.</p></div>
+      <div class="feature-card bg-black reveal"><h3 class="display-md text-xl mb-3">Continuity</h3><p class="text-sm text-white/55 leading-relaxed">The relationship doesn't end at closing — it's just the beginning.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 pt-20 pb-10">
+  <div class="container-avb grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+    <div class="md:col-span-4">
+      <p class="font-display text-2xl mb-4">AVB <span class="italic text-gold-soft font-normal">Imobiliária</span></p>
+      <p class="eyebrow mb-6">Luanda · Dubai · Lisbon</p>
+      <p class="text-sm text-white/45 leading-relaxed max-w-xs">Intermediação imobiliária de luxo — representando propriedades de destaque em três continentes.</p>
+    </div>
+    <div class="md:col-span-2 md:col-start-6">
+      <p class="text-xs text-white/40 mb-5 tracking-wide-avb uppercase">Quick Links</p>
+      <div class="flex flex-col gap-3 text-sm">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="properties.html" class="footer-link">Properties</a>
+        <a href="investments.html" class="footer-link">Investments</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="services.html" class="footer-link">Services</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-xs text-white/40 mb-5 tracking-wide-avb uppercase">Contact</p>
+      <div class="flex flex-col gap-3 text-sm text-white/60">
+        <span>+244 923 000 000</span>
+        <span>contact@avbimobiliaria.com</span>
+      </div>
+    </div>
+    <div class="md:col-span-3">
+      <p class="text-xs text-white/40 mb-5 tracking-wide-avb uppercase">Social</p>
+      <div class="flex flex-col gap-3 text-sm">
+        <a href="#" class="footer-link">Instagram</a>
+        <a href="#" class="footer-link">LinkedIn</a>
+        <a href="#" class="footer-link">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="container-avb">
+    <div class="hairline mb-8"></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/35">
+      <p>© <span data-year></span> AVB Imobiliária. All rights reserved.</p>
+      <a href="https://instagram.com/wrao.agency" target="_blank" rel="noopener" class="text-white/25 hover:text-gold-soft transition-colors">Made by WRAO</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/244923000000" target="_blank" rel="noopener" class="float-btn" aria-label="Chat on WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.19l-.31-.18-3 .79.8-2.92-.2-.3A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z" fill="#0A0A0A"/><path d="M16.3 14.3c-.24-.12-1.4-.7-1.62-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94-.28.18-.52.06a6.6 6.6 0 01-1.94-1.2 7.2 7.2 0 01-1.34-1.66c-.14-.24 0-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4h-.46a.9.9 0 00-.64.3 2.7 2.7 0 00-.84 2c0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.13.2-.55.2-1.02.14-1.13-.06-.1-.22-.16-.46-.28z" fill="#0A0A0A"/></svg>
+</a>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

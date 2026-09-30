@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Block no private routes — this is a public single-page app
+Sitemap: https://avbimobiliaria.com/sitemap.xml
